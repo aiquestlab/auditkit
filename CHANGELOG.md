@@ -47,6 +47,12 @@ All notable changes to AuditKit will be documented in this file.
 - Framework support for GCP: SOC2, PCI-DSS, CMMC Level 1, NIST 800-53, ISO 27001
 - 170+ automated security checks for GCP (FREE version)
 - Screenshot guides and remediation commands using `gcloud` CLI
+- **Provider-Specific Binaries** - Choose between single-cloud or multi-cloud scanners
+  - `auditkit` (280MB) - Universal scanner supporting all cloud providers
+  - `auditkit-aws` (20MB) - AWS-only scanner (93% smaller, faster deployment)
+  - `auditkit-azure` (26MB) - Azure-only scanner (91% smaller)
+  - `auditkit-gcp` (44MB) - GCP-only scanner (84% smaller)
+  - Use provider-specific binaries for faster CI/CD pipelines and reduced resource usage
 
 ### Fixed Framework Gaps (2025-10-23)
 - **PCI-DSS Completion** - Filled in missing requirements across all clouds
@@ -75,12 +81,6 @@ All notable changes to AuditKit will be documented in this file.
 - Unified multi-cloud reporting (AWS + Azure + GCP)
 - Enhanced PCI-DSS coverage with organizational controls
 - Improved HIPAA framework crosswalk mappings
-- **Provider-Specific Scanners** - Separate binaries for faster builds and smaller deployments
-  - `auditkit-aws` - AWS-only scanner (~30% smaller than universal scanner)
-  - `auditkit-azure` - Azure-only scanner (~30% smaller than universal scanner)
-  - `auditkit-gcp` - GCP-only scanner (~30% smaller than universal scanner)
-  - Universal `auditkit` scanner supports all providers in single binary
-  - Build commands: `go build ./cmd/auditkit-{aws,azure,gcp}`
 
 ### Documentation
 - GCP usage examples
