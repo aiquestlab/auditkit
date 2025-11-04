@@ -83,8 +83,13 @@ All notable changes to AuditKit will be documented in this file.
 - Improved HIPAA framework crosswalk mappings
 
 ### Documentation
-- GCP usage examples
-- GCP authentication methods
+- **Restructured documentation** - Moved detailed content from README to dedicated docs
+  - New framework-specific guides: `docs/frameworks/cis-benchmarks.md`, `docs/frameworks/iso27001.md`, `docs/frameworks/fedramp.md`
+  - Provider setup guides in `docs/setup/` and `docs/providers/`
+  - CI/CD integration examples in `docs/examples/cicd.md`
+  - Cleaner README with links to detailed documentation
+  - Easier navigation and discovery of features
+- GCP usage examples and authentication methods
 - GCP required permissions
 - Updated framework coverage tables to reflect accurate control counts
 
