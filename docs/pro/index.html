@@ -449,6 +449,12 @@
                     <p><strong>GKE Security:</strong> 10 checks for pod policies, network policies, RBAC, binary authorization.<br><br><strong>Vertex AI Compliance:</strong> 10 checks for ML model governance, data access controls, audit logging.</p>
                     <div class="code-example">./auditkit-pro scan -provider gcp --advanced</div>
                 </div>
+
+                <div class="feature-card">
+                    <h3>On-Prem Scanning <span style="background: #f39c12; color: white; padding: 2px 8px; border-radius: 10px; font-size: 0.6em; vertical-align: middle; margin-left: 8px;">EXPERIMENTAL</span></h3>
+                    <p>Scan on-premises servers connected via <strong>Azure Arc</strong>. Pulls security assessments from Microsoft Defender for Cloud and Guest Configuration compliance. Extends your compliance posture to hybrid environments.</p>
+                    <div class="code-example">./auditkit-pro scan -provider arc -framework cmmc</div>
+                </div>
             </div>
         </div>
     </section>
@@ -543,7 +549,7 @@
 
     <section style="background: #e8f5e9;">
         <div class="container">
-            <h2>NEW: Desktop GUI (v0.8.1)</h2>
+            <h2>NEW: Desktop GUI (v0.8.2)</h2>
             <p style="text-align: center; font-size: 1.15em; margin-bottom: 40px; color: #666;">
                 Beautiful web-based dashboard that runs locally. No cloud dependencies. Air-gap compatible.
             </p>
@@ -849,6 +855,7 @@ Security Group: sg-0ab56571076bcff37 (port 22)
                         <li><a href="../setup/azure.html">Azure Setup</a></li>
                         <li><a href="../setup/gcp.html">GCP Setup</a></li>
                         <li><a href="../setup/m365.html">M365 Setup</a></li>
+                        <li><a href="../providers/arc.html" style="color: #f39c12;">Azure Arc (On-Prem)</a></li>
                     </ul>
                 </div>
 
@@ -865,7 +872,7 @@ Security Group: sg-0ab56571076bcff37 (port 22)
             </div>
 
             <p style="font-size: 0.9em; opacity: 0.8;">
-                AuditKit Pro v0.8.1 • December 2025
+                AuditKit Pro v0.8.2 • December 2025
             </p>
         </div>
     </footer>

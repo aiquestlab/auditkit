@@ -87,6 +87,7 @@ AuditKit scans your cloud infrastructure for compliance gaps and security miscon
 | **CIS Benchmarks** | AWS (126+ controls) | All clouds when available |
 | **GCP Core** | 170+ checks | Same |
 | **GCP Advanced** | - | GKE + Vertex AI (32 checks) |
+| **On-Prem Scanning** | - | Azure Arc (Experimental) |
 | **Multi-Account** | - | AWS Orgs, Azure Mgmt, GCP Folders |
 | **CMMC Level 2** | - | 110 practices (CUI handling) |
 | **Desktop GUI** | - | Web dashboard at localhost:1337 |
@@ -96,7 +97,7 @@ AuditKit scans your cloud infrastructure for compliance gaps and security miscon
 
 ---
 
-## NEW: AuditKit Pro Desktop (v0.8.1)
+## NEW: AuditKit Pro Desktop (v0.8.2)
 
 **Pro customers now get a beautiful web-based dashboard** that runs locally on your machine.
 
