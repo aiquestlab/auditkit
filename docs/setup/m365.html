@@ -3,49 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Microsoft 365 Setup - AuditKit</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #333; }
-        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 40px 20px; text-align: center; }
-        .header h1 { font-size: 2.5em; margin-bottom: 10px; }
-        nav { background: #2c3e50; padding: 15px 0; position: sticky; top: 0; z-index: 100; }
-        nav .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; gap: 30px; flex-wrap: wrap; }
-        nav a { color: white; text-decoration: none; opacity: 0.8; }
-        nav a:hover { opacity: 1; }
-        .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
-        h2 { font-size: 2em; margin: 50px 0 20px 0; color: #2c3e50; border-bottom: 3px solid #667eea; padding-bottom: 10px; }
-        .note { background: #fff3cd; border-left: 4px solid #ff9800; padding: 15px 20px; margin: 20px 0; border-radius: 4px; }
-        footer { background: #2c3e50; color: white; padding: 40px 20px; text-align: center; margin-top: 60px; }
-        footer a { color: #3498db; }
-        p { margin: 15px 0; line-height: 1.8; }
-        a { color: #667eea; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-    </style>
+    <title>M365 Setup - AuditKit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-    <div class="header">
-        <h1>Microsoft 365 Setup</h1>
-        <p>Cloud provider configuration guide for AuditKit</p>
-    </div>
-    <nav>
-        <div class="container">
-            <a href="../">Home</a>
-            <a href="../getting-started.html">Getting Started</a>
-            <a href="../faq.html">FAQ</a>
-            <a href="../examples/">Examples</a>
+
+    <nav class="site-nav">
+        <div class="nav-inner">
+            <a href="/" class="nav-logo">
+                <img src="../auditkit-logo-dark.svg" alt="AuditKit">
+            </a>
+            <div class="nav-links">
+                <a href="https://github.com/guardian-nexus/auditkit">GitHub</a>
+                <a href="../getting-started.html">Docs</a>
+                <a href="../examples/">Examples</a>
+                <a href="../about.html" class="nav-hide-mobile">About</a>
+                <a href="/pro/" class="nav-cta">Get Pro</a>
+            </div>
         </div>
     </nav>
-    <div class="container">
-        <div class="note">
-            <strong>Complete setup guide:</strong> <a href="https://github.com/guardian-nexus/auditkit/blob/main/docs/setup/m365.md">View full Microsoft 365 setup documentation →</a>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>M365 Setup</h1>
+            <p class="subtitle">Cloud provider setup guide for AuditKit</p>
         </div>
-        <p style="text-align: center; font-size: 1.2em; margin: 40px 0;">
-            Detailed setup instructions are available on GitHub.
-        </p>
-    </div>
-    <footer>
-        <p><a href="../">Home</a> · <a href="../examples/">Examples</a> · <a href="https://github.com/guardian-nexus/auditkit">GitHub</a></p>
+    </section>
+
+    <section class="section">
+        <div class="container-prose">
+            <div class="callout">
+                <p><strong>Complete guide:</strong> <a href="https://github.com/guardian-nexus/auditkit/blob/main/docs/setup/m365.md">View full M365 Setup guide on GitHub &rarr;</a></p>
+            </div>
+            <p class="text-center text-lg" style="margin-top: 2rem;">
+                Detailed setup documentation is available on GitHub.
+            </p>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>Cloud Providers</h4>
+                    <ul>
+                        <li><a href="./aws.html">AWS Setup</a></li>
+                        <li><a href="./azure.html">Azure Setup</a></li>
+                        <li><a href="./gcp.html">GCP Setup</a></li>
+                        <li><a href="./m365.html">M365 Setup</a></li>
+                        <li><a href="../providers/arc.html">Azure Arc (Pro)</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Getting Started</h4>
+                    <ul>
+                        <li><a href="../getting-started.html">Quick Start Guide</a></li>
+                        <li><a href="../installation.html">Installation</a></li>
+                        <li><a href="../cli-reference.html">CLI Reference</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="../about.html">About</a></li>
+                        <li><a href="https://github.com/guardian-nexus/auditkit">GitHub</a></li>
+                        <li><a href="mailto:support@auditkit.io">Support</a></li>
+                        <li><a href="/pro/">AuditKit Pro</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>AuditKit v0.8.0 &bull; January 2026</p>
+            </div>
+        </div>
     </footer>
+
+    <script src="../cookie-consent.js"></script>
 </body>
 </html>
