@@ -288,6 +288,7 @@ pre, .code-block {
   line-height: 1.7;
   overflow-x: auto;
   margin-bottom: 1.5rem;
+  white-space: pre-wrap;
 }
 
 .code-block .comment { color: #6a9955; }
